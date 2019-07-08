@@ -32,6 +32,7 @@
     self.cameraButton.clipsToBounds = true;
     
     [self createUIImagePickerController];
+    self.mapView.delegate = self;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -89,9 +90,8 @@
     annotation.coordinate = coordinate;
     annotation.title = @"Picture!";
     [self.mapView addAnnotation:annotation];
+    NSLog(@"popped");
     [self.navigationController popToViewController:self animated:YES];
-
-    self.mapView.delegate = self;
 }
 
 - (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id<MKAnnotation>)annotation {
