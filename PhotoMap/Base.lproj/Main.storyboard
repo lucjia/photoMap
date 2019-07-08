@@ -50,7 +50,7 @@
                         <outlet property="cameraButton" destination="JyK-eC-D8R" id="egS-Zs-gIG"/>
                         <outlet property="mapView" destination="bah-eG-lsW" id="5st-Ee-Nej"/>
                         <segue destination="dhm-cj-dCe" kind="show" identifier="fullImageSegue" id="j47-0S-4ot"/>
-                        <segue destination="Fvc-Fc-ega" kind="modal" identifier="tagSegue" id="wtL-Hs-mhM"/>
+                        <segue destination="Fvc-Fc-ega" kind="presentation" identifier="tagSegue" id="wtL-Hs-mhM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -74,11 +74,11 @@
                                     <textInputTraits key="textInputTraits"/>
                                 </searchBar>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="default" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="LocationCell" rowHeight="61" id="y7L-pG-TRL" customClass="LocationCell">
-                                        <rect key="frame" x="0.0" y="72" width="375" height="61"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="default" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="LocationCell" rowHeight="70" id="y7L-pG-TRL" customClass="LocationCell">
+                                        <rect key="frame" x="0.0" y="72" width="375" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="y7L-pG-TRL" id="sAK-kx-BbN">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="60.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="69.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fzg-nZ-8sL">

@@ -83,13 +83,14 @@
 }
 
 - (void)locationsViewController:(LocationsViewController *)controller didPickLocationWithLatitude:(NSNumber *)latitude longitude:(NSNumber *)longitude {
-    [self.navigationController popToViewController:self animated:YES];
+    
     CLLocationCoordinate2D coordinate = CLLocationCoordinate2DMake(latitude.floatValue, longitude.floatValue);
     MKPointAnnotation *annotation = [MKPointAnnotation new];
     annotation.coordinate = coordinate;
     annotation.title = @"Picture!";
     [self.mapView addAnnotation:annotation];
-    
+    [self.navigationController popToViewController:self animated:YES];
+
     self.mapView.delegate = self;
 }
 
